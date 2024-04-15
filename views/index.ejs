@@ -65,36 +65,7 @@
   <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script><script  src="scripts/VHS.js"></script>
   <audio id="audio" src="assets/static.wav"></audio>
   <script src="scripts/list.js"></script>
-  <script>
-    var currentChannel = 1;
-    var totalChannels = 5; 
+  <script src="scripts/tapes.js"></script>
 
-    document.getElementById("play-video").addEventListener("click", function() {
-
-        document.getElementById("video-container").style.display = "block";
-        
-
-        var video = document.getElementById("background-video");
-        
-
-        video.src = "tapes/video" + currentChannel + ".mp4";
-        
-     
-        video.muted = false;
-        
-  
-        video.play();
-        
-       
-        currentChannel = (currentChannel % totalChannels) + 1;
-        
-
-        document.getElementById("play-video").innerText = "CHANNEL 0" + currentChannel;
-    });
-
-
-
-
-</script>
 </body>
 </html>

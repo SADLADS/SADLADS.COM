@@ -2,3 +2,158 @@
     color: red !important;
 }
 
+.list-wrapper {
+    margin-top: 50px; 
+	justify-content: center;
+	display: flex;
+	align-items: center; 
+
+}
+
+.centered-list {
+	position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: auto;
+	color: #fff;
+	font-family: 'Press Start 2P', cursive;
+	transition: top 0.5s ease-in-out;
+	text-align: center;
+
+	
+
+}
+
+
+
+.centered-list.active {
+    transform: translateY(0%);
+}
+
+.centered-list.off-screen {
+    transform: translateY(-4000%);
+}
+
+
+.centered-list li{
+    margin-bottom: 10px;
+    font-size: 1.3rem; 
+}
+
+.domain:hover {
+    margin-bottom: 10px; 
+	background-image: url('/img/rainbow-static.webp');
+	cursor: pointer;
+}
+
+
+
+
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	height: auto;
+  }
+  
+
+  #video-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.next-channel-wrapper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    padding: 10px;
+
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    font-size: 1rem;
+    background: transparen
+
+  }
+
+  .next-channel-wrapper-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    padding: 10px;
+
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    font-size: 1rem;
+    background: transparen
+
+  }
+  
+  .next-channel-wrapper h1 {
+	will-change: text-shadow;
+	animation: rgbText 1s steps(9) 0s infinite alternate;
+    font-size: 1.2rem;
+
+  }
+
+  .next-channel-wrapper h1:hover {
+	color: aliceblue;
+	cursor: pointer;
+	background-image: url('/img/rainbow-static.webp');
+
+  }
+
+  .site-list{
+	display: flex;
+	overflow: hidden;
+	justify-content: center; 
+	align-items: center; 
+	height: 100vh; 
+	font-size: 2rem;;
+  }
+
+  #toggleButton {
+	z-index: 1000;
+	font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    font-size: 1.2rem;
+    background: transparent;
+	width: auto;
+
+  }
+
+  #toggleButton:hover {
+	cursor: pointer;
+	background-image: url('/img/rainbow-static.webp');
+  }
+
+  .why-wont-this-work-i-am-getting-vere-upset {
+	/* THIS WORKS DO NOT TOUCH */
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+  }
+
+  .footer {
+	color: white;
+	padding: 20px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+  }
