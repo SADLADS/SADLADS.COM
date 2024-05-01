@@ -1,73 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>SADLADS</title>
-  <link rel="stylesheet" href="css/VHS.css">
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>SADLADS</title>
+    <link rel="stylesheet" href="css/VHS.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
+
 <body>
 
 
-<div id="video-container">
-    <video id="background-video" preload="auto" loop muted>
-        <source src="video1.mp4" type="video/mp4">
-        <source src="video2.mp4" type="video/mp4">
-        <source src="video3.mp4" type="video/mp4">
-        <source src="video4.mp4" type="video/mp4">
-        <source src="video5.mp4" type="video/mp4">
+    <div id="video-container">
+        <video id="background-video" preload="auto" loop muted>
+            <source src="video1.mp4" type="video/mp4">
+            <source src="video2.mp4" type="video/mp4">
+            <source src="video3.mp4" type="video/mp4">
+            <source src="video4.mp4" type="video/mp4">
+            <source src="video5.mp4" type="video/mp4">
 
-    </video>
-</div>
+        </video>
+    </div>
 
-<div class="lines"></div>
+    <div class="lines"></div>
 
-<div class="filter"></div>
+    <div class="filter"></div>
 
-<div class="main">
-    <div class="site-list">
-        <div class="list-wrapper">
-            <ul class="centered-list" id="sadlads-list">
-                <li><div class="domain"><div style="display: inline-block; width: 6em; text-align: right;"><a href="/games" style="text-decoration: none; color: inherit;">games</div><div style="display: inline-block;">.<span style="color: red;">SADLADS</span>.</div><div style="display: inline-block; width: 3em; text-align: left;">com</a></div></div></li>
-                <% for (let i = 0; i < domains.length; i++) { %>
-                    <li><div class="domain"><div style="display: inline-block; width: 6em; text-align: right;"><a href="https://<%= domains[i] %>.sadlads.com/" style="text-decoration: none; color: inherit;"><%= domains[i] %></div><div style="display: inline-block;">.<span style="color: red;">SADLADS</span>.</div><div style="display: inline-block; width: 3em; text-align: left;">com</a></div></div></li>
-                <% } %>
-               
-            </ul>
-            <ul class="centered-list active off-screen" id="projects-list">
-                <li><div class="domain"><a href="https://voicaw.com/" style="text-decoration: none; color: inherit;">www.<span style="color: #702e86;">VOICAW</span>.com</a></div></li>
-                <li><div class="domain"><a href="https://HOHLGANGSANLAGE.com/" style="text-decoration: none; color: inherit;">www.<span style="color: rgb(105, 105, 105);">HOHLGANGSANLAGE</span>.com</a></div></li>
-             </ul>
-            <ul class="centered-list active off-screen" id="goats-list">
-                <li><div class="domain"><a href="https://OTTO.SAE-WO.NG/" style="text-decoration: none; color: inherit;"><span style="color:  #f2ea30;">OTTO.SAE-WO.NG</span></a></div></li>
-                <li><div class="domain"><a href="https://Harry.je/" style="text-decoration: none; color: inherit;"><span style="color:  #ffffff;">HARRY</span>.je</a></div></li>    
-            </ul>
+    <div class="main">
+        <div class="site-list">
+            <div class="list-wrapper">
+                <ul class="centered-list" id="sadlads-list">
+                    <li>
+                        <div class="domain">
+                            <div style="display: inline-block; width: 6em; text-align: right;"><a href="/games"
+                                    style="text-decoration: none; color: inherit;">games</div>
+                            <div style="display: inline-block;">.<span style="color: red;">SADLADS</span>.</div>
+                            <div style="display: inline-block; width: 3em; text-align: left;">com</a></div>
+                        </div>
+                    </li>
+                    <% for (let i=0; i < domains.length; i++) { %>
+                        <li>
+                            <div class="domain">
+                                <div style="display: inline-block; width: 6em; text-align: right;"><a
+                                        href="https://<%= domains[i] %>.sadlads.com/"
+                                        style="text-decoration: none; color: inherit;">
+                                        <%= domains[i] %>
+                                </div>
+                                <div style="display: inline-block;">.<span style="color: red;">SADLADS</span>.</div>
+                                <div style="display: inline-block; width: 3em; text-align: left;">com</a></div>
+                            </div>
+                        </li>
+                        <% } %>
+
+                </ul>
+                <ul class="centered-list active off-screen" id="projects-list">
+                    <li>
+                        <div class="domain"><a href="https://voicaw.com/"
+                                style="text-decoration: none; color: inherit;">www.<span
+                                    style="color: #702e86;">VOICAW</span>.com</a></div>
+                    </li>
+                    <li>
+                        <div class="domain"><a href="https://HOHLGANGSANLAGE.com/"
+                                style="text-decoration: none; color: inherit;">www.<span
+                                    style="color: rgb(105, 105, 105);">HOHLGANGSANLAGE</span>.com</a></div>
+                    </li>
+                </ul>
+                <ul class="centered-list active off-screen" id="goats-list">
+                    <li>
+                        <div class="domain"><a href="https://OTTO.SAE-WO.NG/"
+                                style="text-decoration: none; color: inherit;"><span
+                                    style="color:  #f2ea30;">OTTO.SAE-WO.NG</span></a></div>
+                    </li>
+                    <li>
+                        <div class="domain"><a href="https://Harry.je/"
+                                style="text-decoration: none; color: inherit;"><span
+                                    style="color:  #ffffff;">HARRY</span>.je</a></div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
+        <div class="noise"></div>
+        <div class="vhs" data-splitting>SADLADS</div>
+        <div class="time"><span id="time"></span></div>
+        <div class="counter">REC <label id="minutes">00</label>:<label id="seconds">00</label></div>
 
     </div>
-	<div class="noise"></div>
-	<div class="vhs" data-splitting>SADLADS</div>
-	<div class="time"><span id="time"></span></div>
-	<div class="counter">REC <label id="minutes">00</label>:<label id="seconds">00</label></div>
-    
-</div>
 
-<div class="footer">
-    <div class="why-wont-this-work-i-am-getting-vere-upset">
-    <h1 id="toggleButton">PROJECTS ></h1>
+    <div class="footer">
+        <div class="why-wont-this-work-i-am-getting-vere-upset">
+            <h1 id="toggleButton">PROJECTS ></h1>
+        </div>
     </div>
-  </div>
 
-<div class="next-channel-wrapper"><h1 id="play-video">CHANNEL 00</h1></div>
+    <div class="next-channel-wrapper">
+        <h1 id="play-video">CHANNEL 00</h1>
+    </div>
 
 
 
-  <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script><script  src="scripts/VHS.js"></script>
-  <audio id="audio" src="assets/static.wav"></audio>
-  <script src="scripts/list.js"></script>
-  <script src="scripts/tapes.js"></script>
-  
+    <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
+    <script src="scripts/VHS.js"></script>
+    <audio id="audio" src="assets/static.wav"></audio>
+    <script src="scripts/list.js"></script>
+    <script src="scripts/tapes.js"></script>
+
 
 </body>
+
 </html>

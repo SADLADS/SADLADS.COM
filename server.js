@@ -9,7 +9,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const words = [ 'wiki', 'dl', 'crafty', 'vault',  ];
+const words = ['wiki', 'dl', 'crafty', 'vault',];
 
 
 app.get('/', (req, res) => {

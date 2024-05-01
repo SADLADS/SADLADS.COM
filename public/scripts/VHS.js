@@ -39,7 +39,7 @@ function getTime() {
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
-  t = setTimeout(function() {
+  t = setTimeout(function () {
     getTime()
   }, 500);
 }

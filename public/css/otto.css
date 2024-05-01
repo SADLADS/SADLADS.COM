@@ -3,6 +3,7 @@ center {
 	display: block;
 	margin: 1em 0px;
 }
+
 body {
 	background-color: #252527;
 	background-image: url(/img/back.png);
@@ -10,120 +11,142 @@ body {
 	font-size: 16px;
 	color: #DDDDDD;
 }
-.content{
+
+.content {
 	text-align: justify;
 	width: 900px;
-    overflow: auto;
-    height: auto;
+	overflow: auto;
+	height: auto;
 }
-h1{
-	color: white;
-}
-h2{
-	color: white;
-}
-h3{
-	color: white;
-}
-h4{
-	color: white;
-}
-h5{
-	color: white;
-}
-h6{
+
+h1 {
 	color: white;
 }
 
-a{
-	color : red;
+h2 {
+	color: white;
 }
-a.navButton{
+
+h3 {
+	color: white;
+}
+
+h4 {
+	color: white;
+}
+
+h5 {
+	color: white;
+}
+
+h6 {
+	color: white;
+}
+
+a {
+	color: red;
+}
+
+a.navButton {
 	font-size: 25px;
 	text-decoration: none;
 }
+
 /* Collapsible Stuff */
 .collapsible {
-  display: block;
-  margin-bottom: 1em;
+	display: block;
+	margin-bottom: 1em;
 }
-input[type="checkbox"] {
-  display: none;
-}
-input[type="checkbox"] + label {
-  display: block;
-  cursor: pointer;
-  font-weight: bold;
-  position: relative;
-  padding-left: 20px;
-}
-input[type="checkbox"] + label:after {
-  content: '+';
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: transform 0.3s ease;
-}
-input[type="checkbox"]:checked + label:after {
-  content: '-';
-  transform: rotate(360deg);
-}
-input[type="checkbox"]:not(:checked) ~ .content {
-  display: none;
-}
-input[type="checkbox"]:checked ~ .content {
-  display: block;
-}
-/* End of Collapsible Stuff */ 
 
-table{
-	width:100%;
-	text-align:center;
-	font-size:24px;
+input[type="checkbox"] {
+	display: none;
 }
-th a{
-	color:white;
-	text-decoration:none;
+
+input[type="checkbox"]+label {
+	display: block;
+	cursor: pointer;
+	font-weight: bold;
+	position: relative;
+	padding-left: 20px;
 }
-th a:hover{
-	color:white;
-	text-decoration:underline;
+
+input[type="checkbox"]+label:after {
+	content: '+';
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: transform 0.3s ease;
 }
-.image{
-	margin:10px;
+
+input[type="checkbox"]:checked+label:after {
+	content: '-';
+	transform: rotate(360deg);
+}
+
+input[type="checkbox"]:not(:checked)~.content {
+	display: none;
+}
+
+input[type="checkbox"]:checked~.content {
+	display: block;
+}
+
+/* End of Collapsible Stuff */
+
+table {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+}
+
+th a {
+	color: white;
+	text-decoration: none;
+}
+
+th a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.image {
+	margin: 10px;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-#SL{
+#SL {
 	font-family: Arial;
 	font-weight: bold;
 	font-size: 135px;
 	color: red;
 	text-shadow: 7px 7px black;
-	width:700px;
+	width: 700px;
 }
-#SL.homepage{
-	margin-top:200px;
+
+#SL.homepage {
+	margin-top: 200px;
 }
 
 #SL {
-    animation: floatUpDown 1s ease-in-out forwards, shadowPulse 1s ease-in-out forwards;
+	animation: floatUpDown 1s ease-in-out forwards, shadowPulse 1s ease-in-out forwards;
 }
 
 @keyframes floatUpDown {
-    0% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+	0% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes shadowPulse {
-    0% {
-        text-shadow: 15px 15px black;
-    }
-    100% {
-        text-shadow: 7px 7px black;
-    }
+	0% {
+		text-shadow: 15px 15px black;
+	}
+
+	100% {
+		text-shadow: 7px 7px black;
+	}
 }
