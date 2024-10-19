@@ -1,0 +1,55 @@
+.Lan-Wrapper{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2rem;
+    /* background-color: blueviolet; */
+
+    font-family: "Chakra Petch", sans-serif !important;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.lan-box{
+    width: 40%;
+}
+
+.lan-box h2{
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    color: red;
+    /* margin: 30px 0 30px 0; */
+    padding: 0;
+
+}
+
+#p-desc{
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+
+.lan-blue-1 {
+    background-color: blue;
+    font-style: normal !important;
+    color: yellow !important;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.6rem;
+    margin: 40px 0 0 0;
+    padding-left: 20PX;
+}
+
+.SADLADS-blue {
+    margin: 40px 0 40px 0;
+    text-align: center;
+    background-color: blue;
+    font-style: normal !important;
+    color: red;
+    font-family: "Chakra Petch", sans-serif;
+}
