@@ -31,19 +31,12 @@
         <div class="site-list">
             <div class="list-wrapper">
                 <ul class="centered-list" id="sadlads-list">
-                    <li>
-                        <div class="domain">
-                            <div style="display: inline-block; width: 6em; text-align: right;"><a href="/games"
-                                    style="text-decoration: none; color: inherit;">games</div><div style="display: inline-block;">.<span style="color: red;">SADLADS</span>.</div><div style="display: inline-block; width: 3em; text-align: left;">com</a></div>
-                        </div>
-                        
-                        
-                    </li>
+                    
                     <% for (let i=0; i < domains.length; i++) { %>
                         <li>
                             <div class="domain">
                                 <div style="display: inline-block; width: 6em; text-align: right;"><a
-                                        href="https://<%= domains[i] %>.sadlads.com/"
+                                        href="/<%= domains[i] %>"
                                         style="text-decoration: none; color: inherit;">
                                         <%= domains[i] %>
                                 </div><div style="display: inline-block;">.<span style="color: red;">SADLADS</span>.</div><div style="display: inline-block; width: 3em; text-align: left;">com</a></div>
