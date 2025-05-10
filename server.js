@@ -9,7 +9,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const words = [ 'games', 'lan', 'climb', 'lib', 'vault',];
+const words = [ 'games', 'lan', 'venture', 'lib', 'vault',];
 
 
 app.get('/', (req, res) => {
@@ -24,7 +24,7 @@ app.get('/LAN', (req, res) => {
     res.render('lan');
 });
 
-app.get('/climb', (req, res) => {
+app.get('/venture', (req, res) => {
     res.render('climb');
 });
 

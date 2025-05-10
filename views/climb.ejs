@@ -4,14 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exlpore</title>
+
+    <style>
+
+    </style>
+
 </head>
 <body>
-    <div id="climb-content-wrapper" style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;"> 
-        <div>
+<style>
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-rows: repeat(1, 100vh); /* Adjust the number of rows as needed */
+        grid-template-columns: 1fr;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+    }
+
+    .grid-item {
+        display: flex;
+ 
+    }
+
+    .climb-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        width: 100%; 
+    }
+
+    .logos-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; 
+        width: 100%; 
+        height: 150px;
+        border-bottom: #252527 2px solid;
+
+    }
+
+    .logos-bar img{ 
+        max-height: 70px;
+
+    }
+
+
+
+</style>
+
+<div class="grid-item" style="background-color: #252527;">
+<div style="position: relative; width: 100%; height: 100%; display: flex; justify-content: flex-end; align-items: center;">
+    <img src="img/climb/mntn-layer1.png" alt="Description of image" style="position: absolute; top: 0; right: 0; width: auto; height: 100%; object-fit: cover;">
+
+    <img src="img/climb/mntn-layer2.png" alt="Description of image" style="position: absolute; top: 0; right: 0; width: auto; height: 100%; object-fit: contain; transform: translatey(100%); transition: transform 0.3s ease-in-out;" onload="this.style.transform='translateX(0)';">
+
+    <img src="img/climb/mntn-layer3.png" alt="Description of image" style="position: absolute; top: 0; right: 0; width: auto; height: 100%; object-fit: cover; transform: translatey(100%); transition: transform 0.3s ease-in-out;" onload="this.style.transform='translateX(0)';" >
+</div>
+</div>
+<!-- <div class="grid-item" style="background-color: #252527;">
+    <div class="climb-wrapper">
+        <div class="logos-bar">
+            <h1>SADLADS expeditions</h1>
+        </div>
+        <div class="climb-content" style="background-color:#252527">
             <h1>Climb</h1>
             <p>AUG17--22 MOUNT KAZBEGI</p>
             <p>A SADLDAS EXPEDITION</p>
-        </div>
     </div>
+</div>
+</div> -->
+
+
 </body>
 </html>

@@ -132,3 +132,5 @@ dist
 # default config
 # config/default.json
 public/tapes/tapes.rar
+.mp4
+*.mp4
