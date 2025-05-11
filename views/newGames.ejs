@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+
+
+    <link rel="stylesheet" href="css/newGames.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+</head>
+
+<body>
+    <div class="desktop-wrapper">
+
+<!-- Icons -->
+        <!-- Among Us -->
+
+        <div class="desktop-icon" onclick="openPopup('AmongUsPopup')">
+            <img src="img/games/98icons/sus-icon.png" alt="Description of image" class="icon-image">
+            <p>Among Us</p>
+        </div>
+        <!-- Minecraft -->
+        <div class="desktop-icon" onclick="openPopup('minecraftPopup')">
+            <img src="img/games/98icons/mc-icon.png" alt="Description of image" class="icon-image">
+            <p>Minecraft</p>
+        </div>
+        <!-- Content Warning -->
+        <div class="desktop-icon" onclick="openPopup('CWPopup')">
+            <img src="img/games/98icons/cw-icon.png" alt="Description of image" class="icon-image">
+            <p>Content Warning</p>
+        </div>
+        <!-- Gmod -->
+        <div class="desktop-icon" onclick="openPopup('GmodPopup')">
+            <img src="img/games/98icons/Gmod-icon.png" alt="Description of image" class="icon-image">
+            <p>Garry's Mod</p>
+        </div>
+        <!-- Lethal Company -->
+        <div class="desktop-icon" onclick="openPopup('LeathalCompanyPopup')">
+            <img src="img/games/98icons/lc-icon.png" alt="Description of image" class="icon-image">
+            <p>Lethal Company</p>
+        </div>
+
+     
+<!-- Pop Ups (move this to includes maybe) -->
+
+        <!-- Among Us -->
+        <div id="AmongUsPopup" class="window popup" style="display: none;">
+            <div class="title-bar" onmousedown="startDrag(event, 'AmongUsPopup')">
+                <div class="title-bar-text">Among Us</div>
+                <button aria-label="Close" onclick="closePopup('AmongUsPopup')">X</button>
+            </div>
+            <div class="window-body">
+                <p>Buy on steam </p>
+                <p>Play with 4-15 player online or via local WiFi as you attempt to prepare your spaceship for departure, but beware as one or more random players among the Crew are Impostors bent on killing everyone!</p>
+                <h1>Mods Guide:</h1>
+                <ol>
+                    <li><a href="Better-CrewLink-Setup-3.1.1.exe">Download Crewlink exe</a></li>
+                    <li>Run the exe</li>
+                    <li>Play Among Us</li>
+                </ol>
+
+            </div>
+        </div>
+
+        <!-- Minecraft -->
+        <div id="minecraftPopup" class="window popup" style="display: none;">
+            <div class="title-bar" onmousedown="startDrag(event, 'minecraftPopup')">
+                <div class="title-bar-text">Minecraft - mc.SADLADS.com</div>
+                <button aria-label="Close" onclick="closePopup('minecraftPopup')">X</button>
+            </div>
+            <div class="window-body">
+                <p>To join the offical SADLADS Minecraft SMP (mc.SADLADS.com) request to be whitelisted here.</p>
+                <p>You can view a live 3D render of the world at <a href="https://map.sadlads.com/">map.SADLADS.com.</a></p>
+                <p>Current whitelist:</p>
+                <ul>
+                    <li>PartyTrumpet</li>
+                    <li>kox</li>
+                    <li>k0x</li>
+                    <li>Epik_Pineapple</li>
+                    <li>etc</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Content Warning -->
+        <div id="CWPopup" class="window popup" style="display: none; width: 500px !important;">
+            <div class="title-bar" onmousedown="startDrag(event, 'CWPopup')">
+                <div class="title-bar-text">Content Warning</div>
+                <button aria-label="Close" onclick="closePopup('CWPopup')">X</button>
+            </div>
+            <div class="window-body">
+                <a href="https://store.steampowered.com/app/2881650/Content_Warning/">Buy on Steam</a>
+                <p> Get famous or die trying! Content Warning is a co-op horror game where you film spooky stuff with your friends to try and go viral.</p>
+                <h1>Mods Guide.</h1>
+                <ol>
+                    <li>Download &amp; install <a
+                            href="https://media.sadlads.com/r2modman-Setup-3.1.48.exe">r2modman</a>.</li>
+                    <li>type "content warning" in the search box, and click "set as default".</li>
+                    <li>click the "Import / Update" button.</li>
+                    <li>If it's your first time using r2modman, click "Import new profile". Otherwise, click "Update
+                        existing profile"</li>
+                    <li>Click "From Code".</li>
+                    <li>Enter the following code: <span id="copySpan"
+                            onclick="copyStuff()">018ee81e-62bf-d73f-af40-a8d55e5ddac1</span> (click to copy).</li>
+                    <li>Click "Import".</li>
+                    <li>Make sure "CW_SADLADS" is selected, and Click "Select Profile".</li>
+                    <li>Click "Start modded".</li>
+                    <li>Yep, It's gaming time.</li>
+                </ol>
+                <p>Pro tip: If the game is not showing in r2modman, install the latest version (available <a href="https://media.sadlads.com/r2modman-Setup-3.1.48.exe">here</a>).</p>
+            </div>
+        </div>
+
+        <!-- Gmod -->
+        <div id="GmodPopup" class="window popup" style="display: none; width: 600px !important;">
+            <div class="title-bar" onmousedown="startDrag(event, 'GmodPopup')">
+                <div class="title-bar-text">Garry's Mod</div>
+                <button aria-label="Close" onclick="closePopup('GmodPopup')">X</button>
+            </div>
+            <div class="window-body">
+                <a href="https://store.steampowered.com/app/4000/garrys_mod">Buy on Steam</a>
+                <p>Garry's Mod is a physics sandbox. There aren't any predefined aims or goals. We give you the tools and leave you to play.</p>
+                <p>You spawn objects and weld them together to create your own contraptions - whether that's a car, a rocket, a catapult or something that doesn't have a name yet - that's up to you. You can do it offline, or join the thousands of players who play online each day.</p>
+                <p>If you're not too great at construction - don't worry! You can place a variety of characters in silly positions. But if you want to do more, we have the means.</p>
+                <h1>Mods Guide:</h1>
+                <ol>
+                    <li>Subscribe to all <a
+                            href="https://steamcommunity.com/sharedfiles/filedetails/?id=1418684484">workshop
+                            items</a></li>
+                    <li><a href="SADLADS_GMOD_MODPACK_1.0.zip">Download Modpack</a></li>
+                    <li>Right click Garry's Mod in Steam -&gt; Manage -&gt; Browse Local Files</li>
+                    <img class="image" src="assets/Games/gm-browse.jpg">
+                    <li>Extract the modpack to the game folder. It should look like this:</li>
+                    <img class="image" src="assets/Games/gm-files.jpg">>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Lethal Company -->
+        <div id="LeathalCompanyPopup" class="window popup" style="display: none; width: 800px !important;">
+            <div class="title-bar" onmousedown="startDrag(event, 'LeathalCompanyPopup')">
+                <div class="title-bar-text">Lethal Company</div>
+                <button aria-label="Close" onclick="closePopup('LeathalCompanyPopup')">X</button>
+            </div>
+            <div class="window-body">
+                <a href="https://store.steampowered.com/app/1966720/Lethal_Company/">Buy on Steam</a>
+                <p>
+                    You are a contracted worker for the Company. Your job is to collect scrap from abandoned,
+                    industrialized moons to meet the Company's profit quota. You can use the cash you earn to travel to
+                    new moons with higher risks and rewards--or you can buy fancy suits and decorations for your ship.
+                    Experience nature, scanning any creature you find to add them to your bestiary. Explore the wondrous
+                    outdoors and rummage through their derelict, steel and concrete underbellies. Just <i>never</i> miss
+                    the quota.
+                </p>
+                <h1>Mods Guide:</h1>
+                <ol>
+                    <!-- <li><a href="SADLADS_LC_MODPACK_1.9.7.zip">Download Modpack (v1.9.7)</a> (Click <a href="old/">here</a> to view older versions)</li> -->
+                    <li>Download &amp; install <a
+                            href="https://media.sadlads.com/r2modman%20Setup%203.1.46.exe">r2modman</a></li>
+                    <li>type "lethal company" in the search box, and click "set as default"</li>
+                    <img class="image" src="assets/Games/gameselect.png" style="width:700px;">
+                    <li>click the "Import / Update" button</li>
+                    <img class="image" src="assets/Games/import.png" style="width:700px;">
+                    <li>If it's your first time using r2modman, click "Import new profile". Otherwise, click "Update
+                        existing profile"</li>
+                    <li>Click "From Code"</li>
+                    <li>Enter the following code: <span id="copySpan"
+                            onclick="copyStuff()">018d7e5c-6549-7ce0-b7a7-aa8b3836237b</span> (click to copy)</li>
+                    <li>Click "Import"</li>
+                    <li>Make sure "SADLADS Mods" is selected, and Click "Select Profile"</li>
+                    <li>Click "Start modded"</li>
+                    <li>Yep, It's gaming time.</li>
+                </ol>
+            </div>
+        </div>
+
+
+
+        <script>
+            function openPopup(id) {
+            const popup = document.getElementById(id);
+            popup.style.display = 'block';
+            bringToFront(popup);
+            }
+
+            function closePopup(id) {
+            document.getElementById(id).style.display = 'none';
+            }
+
+            function startDrag(event, id) {
+            const popup = document.getElementById(id);
+            let shiftX = event.clientX - popup.getBoundingClientRect().left;
+            let shiftY = event.clientY - popup.getBoundingClientRect().top;
+
+            function moveAt(pageX, pageY) {
+                popup.style.left = pageX - shiftX + 'px';
+                popup.style.top = pageY - shiftY + 'px';
+            }
+
+            function onMouseMove(event) {
+                moveAt(event.pageX, event.pageY);
+            }
+
+            document.addEventListener('mousemove', onMouseMove);
+
+            document.onmouseup = function () {
+                document.removeEventListener('mousemove', onMouseMove);
+                document.onmouseup = null;
+            };
+
+            popup.style.position = 'absolute';
+            popup.style.zIndex = 1000;
+            bringToFront(popup);
+            }
+
+            function bringToFront(element) {
+            const highestZIndex = Array.from(document.querySelectorAll('.popup'))
+                .map(el => parseInt(window.getComputedStyle(el).zIndex) || 0)
+                .reduce((max, zIndex) => Math.max(max, zIndex), 0);
+            element.style.zIndex = highestZIndex + 1;
+            }
+        </script>
+
+    </div>
+
+  <div id="startbar">
+    <a href="/">
+    <button  id="myBtn" class="startbutton">
+       <p class="start" ></p>
+    </button>
+    </a>
+       
+
+       
+    <span class="tasktime">
+              <span class="update">xx</span>
+              <span class="sound">xx</span>
+              <span class="zoneplug">xx</span>
+              <span id="currentTime"></span>
+              <script>
+                  function updateTime() {
+                      const now = new Date();
+                      let hours = now.getHours();
+                      const minutes = now.getMinutes();
+                      const ampm = hours >= 12 ? 'pm' : 'am';
+                      hours = hours % 12 || 12; 
+                      const formattedTime = `${hours}:${minutes.toString().padStart(2, '0')} ${ampm}`;
+                      document.getElementById('currentTime').textContent = formattedTime;
+                  }
+                  setInterval(updateTime, 1000); 
+                  updateTime(); 
+              </script>
+ </div>
+
+
+<div class="expired">
+    <p class="line1">Activate Windows</p>
+    <p class="line2">Go to Settings to Activate Windows</p>
+</div>
+
+</body>
+</html>

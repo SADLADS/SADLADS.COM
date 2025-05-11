@@ -1,0 +1,179 @@
+body {
+    background-color: #008080;
+}
+
+:root{
+    --icon-height: 64px;
+    --icon-width: 64px;
+}
+
+#startbar {
+	overflow: none;
+	font-weight: bold!important;
+	padding: 2px;
+	box-shadow: inset 1px 0 #fff;
+	display: block;
+	background-color: silver;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #f4f4f4;
+	border-bottom: 1px solid #4e4e4e;
+	position: fixed;
+	z-index: 99999;
+	user-select: none;
+	z-index:9999;
+}
+.start {
+	background-image: url(https://i.imgur.com/9bk1mDV.png);
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 14px;
+	margin: 0;
+}
+
+.startbutton {
+	float: left;
+	margin-left: 2px;
+	margin-bottom: 2px;
+	vertical-align: middle;
+	display: inline-block;
+	padding: 2px 6px 3px;
+	background-color: silver;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+	min-width: 59px;
+	margin-right: 6px;
+	color: #000;
+	height: 21px;
+	width: 59px;
+	z-index:99999999999999999;
+}
+.start-menub:hover {}
+
+.tasktime {
+	float: right;
+	text-align: right;
+	padding: 0 10px;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+.tasktime {
+	vertical-align: middle;
+	height: 22px;
+	line-height: 21px;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	font-family: Arial;
+	font-weight: 400;
+	color: #000;
+	text-decoration: none;
+}
+
+.tasktime a {
+	color: #333;
+	text-decoration: none;
+}
+.tasktime .update{
+color:transparent;
+	width:16px;
+	height:16px;
+	text-align:center;
+	padding:0;background:url('https://i.imgur.com/ENydrpX.png') no-repeat;
+	background-size:contain;	
+	margin:0 2px;
+}
+.tasktime .sound{
+color:transparent;
+	width:14px;
+	height:14px;
+	text-align:center;
+	margin:0 2px;
+	background:url('https://i.imgur.com/tHdZ2v3.png') no-repeat;
+	background-size:contain;	
+}
+.mute{
+background:url('https://i.imgur.com/Pu167wo.png') no-repeat!important; /* mute */
+	background-size:contain!important;
+}
+
+.tasktime .zoneplug{
+color:transparent;
+	width:16px;
+	height:16px;
+	text-align:center;
+background:url('https://i.imgur.com/T5KZEuM.png') no-repeat;
+	background-size:contain;	
+	margin:0 4px 0 1px;
+}
+
+.desktop-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop-icon{
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 64px;
+    height: auto;
+}
+
+.desktop-icon img {
+    height: var(--icon-height);
+    width: var(--icon-width);
+}
+
+.desktop-icon p {
+    color: #fff;
+
+
+}
+
+.popup {
+    position: absolute;
+    width: 300px;
+    left: 20%;
+    top: 15%;
+    }
+
+
+
+    .window-body h1 {
+        font-size: medium;
+    }
+
+    .expired{
+        position: fixed;
+        bottom: 70px;
+        right: 60px;
+        text-align: left;
+        pointer-events: none; /* Prevent interaction */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgba(255, 255, 255, 0.5);
+        z-index: 9999;
+    }
+ 
+    .expired p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .expired .line1 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      
+      .expired .line2 {
+        font-size: 14px;
+        font-weight: 400;
+      }
