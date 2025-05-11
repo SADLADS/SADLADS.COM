@@ -114,6 +114,7 @@ background:url('https://i.imgur.com/T5KZEuM.png') no-repeat;
 .desktop-wrapper {
     display: flex;
     flex-direction: column;
+    padding-left: 7px;
 }
 
 .desktop-icon{
