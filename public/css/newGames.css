@@ -172,6 +172,20 @@ background:url('https://i.imgur.com/T5KZEuM.png') no-repeat;
 		display: none;
 	}
 
+	.popup-ad {
+		width: 100% !important;
+		height: 370px !important;
+		left: 0;
+		top: 20%
+	}
+
+	.popup-ad img {
+		width: 100%;
+		height: auto;
+	}
+
+
+
 
 }
     .window-body h1 {
@@ -203,3 +217,12 @@ background:url('https://i.imgur.com/T5KZEuM.png') no-repeat;
         font-size: 14px;
         font-weight: 400;
       }
+
+
+	  .popup-ad {
+		position: absolute;
+		width: auto;
+		height: auto;
+		right: 10%;
+		bottom: 10%;
+	  }

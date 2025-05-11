@@ -141,7 +141,7 @@
         <div id="LeathalCompanyPopup" class="window popup" style="display: none;">
             <div class="title-bar" onmousedown="startDrag(event, 'LeathalCompanyPopup')">
                 <div class="title-bar-text">Lethal Company</div>
-                <button aria-label="Close" onclick="closePopup('LeathalCompanyPopup')">X</button>
+                <button aria-label="Close" onclick="closePopup('LeathalCompanyPopup')">x</button>
             </div>
             <div class="window-body">
                 <a href="https://store.steampowered.com/app/1966720/Lethal_Company/">Buy on Steam</a>
@@ -175,52 +175,17 @@
             </div>
         </div>
 
-
-
-        <script>
-            function openPopup(id) {
-            const popup = document.getElementById(id);
-            popup.style.display = 'block';
-            bringToFront(popup);
-            }
-
-            function closePopup(id) {
-            document.getElementById(id).style.display = 'none';
-            }
-
-            function startDrag(event, id) {
-            const popup = document.getElementById(id);
-            let shiftX = event.clientX - popup.getBoundingClientRect().left;
-            let shiftY = event.clientY - popup.getBoundingClientRect().top;
-
-            function moveAt(pageX, pageY) {
-                popup.style.left = pageX - shiftX + 'px';
-                popup.style.top = pageY - shiftY + 'px';
-            }
-
-            function onMouseMove(event) {
-                moveAt(event.pageX, event.pageY);
-            }
-
-            document.addEventListener('mousemove', onMouseMove);
-
-            document.onmouseup = function () {
-                document.removeEventListener('mousemove', onMouseMove);
-                document.onmouseup = null;
-            };
-
-            popup.style.position = 'absolute';
-            popup.style.zIndex = 1000;
-            bringToFront(popup);
-            }
-
-            function bringToFront(element) {
-            const highestZIndex = Array.from(document.querySelectorAll('.popup'))
-                .map(el => parseInt(window.getComputedStyle(el).zIndex) || 0)
-                .reduce((max, zIndex) => Math.max(max, zIndex), 0);
-            element.style.zIndex = highestZIndex + 1;
-            }
-        </script>
+        <div class="window popup-ad" id="adPopup" style="display: none;">
+            <div class="title-bar">
+              <div class="title-bar-text">SADLASD GAMING TUESDAY</div>
+              <div class="title-bar-controls">
+            <button aria-label="Close" onclick="closeAdPopup()">X</button>
+              </div>
+            </div>
+            <div class="window-body" style="margin: 2px;">
+              <img src="img/games/ad.png" alt="Placeholder Image" class="image">
+            </div>
+        </div>
 
     </div>
 
@@ -258,6 +223,8 @@
     <p class="line1">Activate Windows</p>
     <p class="line2">Go to Settings to Activate Windows</p>
 </div>
+
+<script src="scripts/games98.js"></script>
 
 </body>
 </html>
