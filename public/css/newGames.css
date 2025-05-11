@@ -142,13 +142,38 @@ background:url('https://i.imgur.com/T5KZEuM.png') no-repeat;
 
 .popup {
     position: absolute;
-    width: 300px;
+    width: auto;
+	max-width: 1050px;
     left: 20%;
     top: 15%;
     }
 
+@media (max-width: 600px) {
+
+	body {
+		overflow: hidden;
+		margin: 0;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.popup {
+		width: 100% !important;
+		left: 0;
+		top: 0;
+	}
+
+	.popup img {
+		width: 100%;
+		height: auto;
+	}
+
+	.expired {
+		display: none;
+	}
 
 
+}
     .window-body h1 {
         font-size: medium;
     }
