@@ -40,6 +40,11 @@
             <img src="img/games/98icons/lc-icon.png" alt="Description of image" class="icon-image">
             <p>Lethal Company</p>
         </div>
+        <!-- Barotrauma -->
+        <div class="desktop-icon" onclick="openPopup('BarotraumaPopup')">
+            <img src="img/games/98icons/baro-icon.png" alt="Description of image" class="icon-image">
+            <p>Barotrauma</p>
+        </div>
 
      
 <!-- Pop Ups (move this to includes maybe) -->
@@ -172,6 +177,23 @@
                     <li>Click "Start modded"</li>
                     <li>Yep, It's gaming time.</li>
                 </ol>
+            </div>
+        </div>
+
+        <!-- Barotrauma -->
+        <div id="BarotraumaPopup" class="window popup" style="display: none;">
+            <div class="title-bar" onmousedown="startDrag(event, 'BarotraumaPopup')">
+                <div class="title-bar-text">Barotrauma</div>
+                <button aria-label="Close" onclick="closePopup('BarotraumaPopup')">x</button>
+            </div>
+            <div class="window-body">
+                <a href="https://store.steampowered.com/app/602960/Barotrauma/">Buy on Steam</a>
+                <p>
+                    Barotrauma is a 2D co-op submarine simulator – in space, with survival horror and RPG elements. 
+                    Steer your submarine, complete missions, fight monsters, fix leaks, operate machinery, 
+                    man the guns and craft items, and stay alert: danger in Barotrauma doesn’t announce itself!
+                </p>
+
             </div>
         </div>
 
